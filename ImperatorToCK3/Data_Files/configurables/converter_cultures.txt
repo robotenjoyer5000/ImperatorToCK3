@@ -4038,7 +4038,7 @@ dongyi = {  # https://en.wikipedia.org/wiki/Dongyi
 	color = { 117 240 199 }
 
 	heritage = heritage_dongyi
-	language = language_chinese
+	language = language_dongyi
 	ethos = ethos_egalitarian
 	head_determination = head_determination_domain
 

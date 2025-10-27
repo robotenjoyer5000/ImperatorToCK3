@@ -683,3 +683,19 @@ heritage_occitan = {
 		}
 	}
 }
+
+heritage_dongyi = {
+    REPLACED_BY = {
+		tfe = { heritage_dongyi }
+		wtwsms = { heritage_dongyi }
+		roa = { heritage_dongyi }
+		vanilla = { heritage_dongyi }
+	}
+	type = heritage
+	is_shown = {
+		heritage_is_shown_trigger = {
+			HERITAGE = heritage_dongyi
+		}
+	}
+	audio_parameter = european
+}
