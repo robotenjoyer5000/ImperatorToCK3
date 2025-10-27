@@ -88,8 +88,11 @@ gelonian = {
 qin = {
 	color = { 153 238 255 }
 
+	created = -355.1.1
+	parents = { han }
+
 	heritage = heritage_chinese
-	language = language_chinese
+	language = language_qin_chinese
 	ethos = ethos_bureaucratic
 	head_determination = head_determination_domain
 
@@ -3948,4 +3951,638 @@ anatolian = {
 		# dde_abbasid_clothing_gfx
 	}
 	unit_gfx = { eastern_unit_gfx }
+}
+
+bacviet = {  # https://en.wikipedia.org/wiki/Baiyue
+	color = { 111 115 232 }
+
+	heritage = heritage_vietic
+	language = language_baiyue
+	ethos = ethos_communal
+	head_determination = head_determination_domain
+
+	name_list = name_list_vietnamese
+	martial_custom = martial_custom_equal
+
+	traditions = {
+		tradition_equal_inheritance
+		tradition_maritime_mercantilism
+		tradition_noble_adoption
+		tradition_seafarers
+		tradition_water_rituals
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			ethnicities = {
+				10 = east_asian_chinese_north
+			}
+		}
+		ELSE_IF roa = {
+			ethnicities = {
+			50 = asian_southern_han_1
+			10 = asian_southeast_asian_1
+			10 = asian_southeast_asian_2
+			10 = asian_southeast_asian_3
+			10 = asian_southeast_asian_4
+			10 = asian_southeast_asian_5
+			10 = asian_southeast_asian_6
+			10 = asian_southeast_asian_7
+			}
+		}
+		ELSE = {
+			ethnicities = {
+				10 = asian
+			}
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			coa_gfx = {
+				chinese_group_coa_gfx
+			}
+			building_gfx = {
+				chinese_building_gfx
+			}
+			clothing_gfx = {
+				chinese_clothing_gfx
+			}
+			unit_gfx = { chinese_unit_gfx }
+		}
+		ELSE_IF tfe = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { chinese_building_gfx indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE_IF roa = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx  }
+			building_gfx = { chinese_building_gfx }
+			clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+	} 
+}
+
+dongyi = {  # https://en.wikipedia.org/wiki/Dongyi
+	color = { 117 240 199 }
+
+	heritage = heritage_dongyi
+	language = language_chinese
+	ethos = ethos_egalitarian
+	head_determination = head_determination_domain
+
+	name_list = name_list_han
+	martial_custom = martial_custom_equal
+
+	traditions = {
+		tradition_confucian_philosophy
+		tradition_equitable
+		tradition_maritime_mercantilism
+		tradition_republican_tradition
+		tradition_seafarers
+	}
+
+	dlc_tradition = {
+		trait = tradition_ep3_cultivated_sophistication
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_ce1_ritual_washing
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			ethnicities = {
+				10 = east_asian_chinese_north
+			}
+		}
+		ELSE_IF roa = {
+			# copied from han
+			ethnicities = {
+				2 = east_asian_han_1
+				2 = east_asian_han_2
+				2 = east_asian_han_3
+				2 = east_asian_han_4
+			}
+		}
+		ELSE = {
+			ethnicities = {
+				10 = asian
+			}
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			coa_gfx = {
+				chinese_group_coa_gfx
+			}
+			building_gfx = {
+				chinese_building_gfx
+			}
+			clothing_gfx = {
+				chinese_clothing_gfx
+			}
+			unit_gfx = { chinese_unit_gfx }
+		}
+		ELSE_IF tfe = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { chinese_building_gfx indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE_IF roa = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx  }
+			building_gfx = { chinese_building_gfx }
+			clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+	} 
+}
+
+old_bashu = { 
+	color = color = { 153 238 255 }
+
+	ethos = ethos_communal
+	heritage = heritage_chinese
+	language = language_shu_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	traditions = {
+		tradition_culinary_art
+		tradition_metal_craftsmanship
+		tradition_forest_fighters 
+		tradition_music_theory
+		tradition_swords_for_hire
+	}
+
+	name_list = name_list_sichuan
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			ethnicities = {
+				10 = east_asian_chinese_north
+			}
+		}
+		ELSE_IF roa = {
+			# copied from han
+			ethnicities = {
+				2 = east_asian_han_1
+				2 = east_asian_han_2
+				2 = east_asian_han_3
+				2 = east_asian_han_4
+			}
+		}
+		ELSE = {
+			ethnicities = {
+				10 = asian
+			}
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			coa_gfx = {
+				chinese_group_coa_gfx
+			}
+			building_gfx = {
+				chinese_building_gfx
+			}
+			clothing_gfx = {
+				chinese_clothing_gfx
+			}
+			unit_gfx = { chinese_unit_gfx }
+		}
+		ELSE_IF tfe = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { chinese_building_gfx indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE_IF roa = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx  }
+			building_gfx = { chinese_building_gfx }
+			clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+	} 
+}
+
+# Chinese cultures below 
+
+jianghuai = {
+	color = han
+
+	created = -355.1.1
+	parents = { han bacviet }
+
+
+	ethos = ethos_courtly
+	heritage = heritage_chinese
+	language = language_jianghuai_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	traditions = {
+		tradition_agrarian
+		tradition_concubines
+		tradition_confucian_philosophy
+		tradition_court_eunuchs
+	}
+
+	dlc_tradition = {
+		trait = tradition_ep3_cultivated_sophistication
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_ce1_ritual_washing
+	}
+
+	# Zhanmadao MAA
+
+	name_list = name_list_han
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			ethnicities = {
+				10 = east_asian_chinese_north
+			}
+		}
+		ELSE_IF roa = {
+			# copied from han
+			ethnicities = {
+				2 = east_asian_han_1
+				2 = east_asian_han_2
+				2 = east_asian_han_3
+				2 = east_asian_han_4
+			}
+		}
+		ELSE = {
+			ethnicities = {
+				10 = asian
+			}
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			coa_gfx = {
+				chinese_group_coa_gfx
+			}
+			building_gfx = {
+				chinese_building_gfx
+			}
+			clothing_gfx = {
+				chinese_clothing_gfx
+			}
+			unit_gfx = { chinese_unit_gfx }
+		}
+		ELSE_IF tfe = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { chinese_building_gfx indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE_IF roa = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx  }
+			building_gfx = { chinese_building_gfx }
+			clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}	
+	}
+}
+
+jin = {
+	color = { 171 78 62 }
+	
+	created = -355.1.1
+	parents = { han }
+
+	heritage = heritage_chinese
+	language = language_jin_chinese
+	ethos = ethos_bureaucratic
+	head_determination = head_determination_domain
+
+	name_list = name_list_han
+	martial_custom = martial_custom_male_only
+
+	ttraditions = {
+		tradition_agrarian
+		tradition_concubines
+		tradition_confucian_philosophy
+		tradition_court_eunuchs
+		tradition_culinary_art
+	}
+
+	dlc_tradition = {
+		trait = tradition_ep3_cultivated_sophistication
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_ce1_ritual_washing
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			ethnicities = {
+				10 = east_asian_chinese_north
+			}
+		}
+		ELSE_IF roa = {
+			# copied from han
+			ethnicities = {
+				2 = east_asian_han_1
+				2 = east_asian_han_2
+				2 = east_asian_han_3
+				2 = east_asian_han_4
+			}
+		}
+		ELSE = {
+			ethnicities = {
+				10 = asian
+			}
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			coa_gfx = {
+				chinese_group_coa_gfx
+			}
+			building_gfx = {
+				chinese_building_gfx
+			}
+			clothing_gfx = {
+				chinese_clothing_gfx
+			}
+			unit_gfx = { chinese_unit_gfx }
+		}
+		ELSE_IF tfe = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { chinese_building_gfx indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE_IF roa = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx  }
+			building_gfx = { chinese_building_gfx }
+			clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}	
+	}
+}
+
+qilu = {
+	color = { 118 219 194 }
+	
+	created = -355.1.1
+	parents = { han dongyi }
+
+	heritage = heritage_chinese
+	language = language_jiaoliao_chinese
+	ethos = ethos_bureaucratic
+	head_determination = head_determination_domain
+
+	name_list = name_list_han
+	martial_custom = martial_custom_male_only
+
+	traditions = {
+		tradition_charitable 
+		tradition_concubines
+		tradition_confucian_philosophy
+		tradition_culinary_art
+		tradition_industrious 
+	}
+
+	dlc_tradition = {
+		trait = tradition_ep3_cultivated_sophistication
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_ce1_ritual_washing
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			ethnicities = {
+				10 = east_asian_chinese_north
+			}
+		}
+		ELSE_IF roa = {
+			# copied from han
+			ethnicities = {
+				2 = east_asian_han_1
+				2 = east_asian_han_2
+				2 = east_asian_han_3
+				2 = east_asian_han_4
+			}
+		}
+		ELSE = {
+			ethnicities = {
+				10 = asian
+			}
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			coa_gfx = {
+				chinese_group_coa_gfx
+			}
+			building_gfx = {
+				chinese_building_gfx
+			}
+			clothing_gfx = {
+				chinese_clothing_gfx
+			}
+			unit_gfx = { chinese_unit_gfx }
+		}
+		ELSE_IF tfe = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { chinese_building_gfx indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE_IF roa = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx  }
+			building_gfx = { chinese_building_gfx }
+			clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+	}
+}
+
+sichuan = { # 巴蜀
+	color = sichuan
+
+	created = 50.1.1
+	parents = { han old_bashu }
+
+	ethos = ethos_courtly
+	heritage = heritage_chinese
+	language = language_shu_chinese
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+
+	traditions = {
+		tradition_agrarian
+		tradition_concubines
+		tradition_confucian_philosophy
+		tradition_culinary_art
+	}
+
+	name_list = name_list_sichuan
+
+	coa_gfx = { chinese_group_coa_gfx }
+	building_gfx = { chinese_building_gfx }
+	clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+	unit_gfx = { mongol_unit_gfx }
+
+	ethnicities = {
+		2 = east_asian_han_1
+		2 = east_asian_han_2
+		2 = east_asian_han_3
+		2 = east_asian_han_4
+	}
+}
+
+yan = {
+	color = { 252 208 76 }
+	
+	created = -355.1.1
+	parents = { han }
+
+	heritage = heritage_chinese
+	language = language_jilu_chinese
+	ethos = ethos_bureaucratic
+	head_determination = head_determination_domain
+
+	name_list = name_list_han
+	martial_custom = martial_custom_male_only
+
+	traditions = {
+		tradition_agrarian
+		tradition_concubines
+		tradition_confucian_philosophy
+		tradition_court_eunuchs
+		tradition_life_is_just_a_joke
+	}
+
+	dlc_tradition = {
+		trait = tradition_ep3_cultivated_sophistication
+		requires_dlc_flag = roads_to_power
+		fallback = tradition_ce1_ritual_washing
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			ethnicities = {
+				10 = east_asian_chinese_north
+			}
+		}
+		ELSE_IF roa = {
+			# copied from han
+			ethnicities = {
+				2 = east_asian_han_1
+				2 = east_asian_han_2
+				2 = east_asian_han_3
+				2 = east_asian_han_4
+			}
+		}
+		ELSE = {
+			ethnicities = {
+				10 = asian
+			}
+		}
+	}
+
+	MOD_DEPENDENT = {
+		IF aep = {
+			coa_gfx = {
+				chinese_group_coa_gfx
+			}
+			building_gfx = {
+				chinese_building_gfx
+			}
+			clothing_gfx = {
+				chinese_clothing_gfx
+			}
+			unit_gfx = { chinese_unit_gfx }
+		}
+		ELSE_IF tfe = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { chinese_building_gfx indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE_IF roa = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx  }
+			building_gfx = { chinese_building_gfx }
+			clothing_gfx = { han_clothing_gfx chinese_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+		ELSE = {
+			# copied from han
+			coa_gfx = { chinese_group_coa_gfx }
+			building_gfx = { indian_building_gfx }
+			clothing_gfx = { mongol_clothing_gfx }
+			unit_gfx = { mongol_unit_gfx }
+		}
+	}
 }

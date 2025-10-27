@@ -29,8 +29,8 @@ link = { ck3 = chinese_government
 } 
 
 ## TFE and vanilla CK3
-link = { ir = oligarchic_republic ir = democratic_republic ck3 = republic_government } # TFE
-link = { ir = theocratic_republic ck3 = theocracy_government } # TFE
+link = { ir = oligarchic_republic ir = democratic_republic ck3 = republic_government ir = theocratic_republic } # TFE
+link = { ir = theocratic_monarchy ck3 = theocracy_government } # TFE
 link = { ir = dictatorship ck3 = feudal_government ir = despotic_monarchy ir = aristocratic_monarchy ir = plutocratic_monarchy } # TFE
 link = { ck3 = tribal_government ir = tribal_kingdom ir = tribal_federation } # TFE
 #link = { # TFE, TODO: see what needs to be done in order to make the ruler with this government a head of faith, for example in Hellenic paganism
@@ -61,15 +61,16 @@ link = { # This mapping to the base game nomad_government should be given priori
 }
 link = { ir = tribal_chiefdom ck3 = nomadic_government } # TFE
 
-link = { ck3 = republic_government
+link = { ck3 = administrative_government
 	ir = aristocratic_republic
 	ir = oligarchic_republic
 	ir = democratic_republic
 	ir = plutocratic_republic
 	ir = athenian_republic
+	ir = theocratic_republic
 }
 link = { ck3 = theocracy_government
-	ir = theocratic_republic
+	ir = theocratic_monarchy
 }
 link = { ck3 = feudal_government
 	ir = dictatorship
@@ -102,8 +103,8 @@ link = { ck3 = feudal_government ir = rhodian_dictatorship }
 
 link = { ck3 = feudal_government ir = samaritan_judgedom } # This government is defined in the files, but doesn't seem to actually get used anywhere, so it seems impossible to actually get, but will map just in case ~~tanner918
 
-link = { ck3 = administrative_government ir = chinese_empire has_ck3_dlc = roads_to_power ck3_title_rank = ke } # Will need to have this changed once All Under Heaven comes out
 link = { ck3 = chinese_government ir = chinese_empire } # RoA
+link = { ck3 = administrative_government ir = chinese_empire has_ck3_dlc = roads_to_power ck3_title_rank = ke } # Will need to have this changed once All Under Heaven comes out
 link = { ck3 = feudal_government ir = chinese_empire } # Fallback
 
 link = { ck3 = administrative_government ir = yamato_empire has_ck3_dlc = roads_to_power ck3_title_rank = ke } # Will need to have this changed once All Under Heaven comes out
@@ -125,7 +126,7 @@ link = { ck3 = tribal_government ir = steppe_horde } # Fallback
 
 link = { ck3 = feudal_government ir = pirate_kingdom } # No description but seems to be a reward for missions for realms that have Duuchuu as their primary culture, it is called a "Piratical Monarchy" so will just map to feudal for now ~~tanner918
 
-link = { ck3 = republic_government ir = punic_republic }
+link = { ck3 = administrative_government ir = punic_republic }
 
 link = { # Base game version of Nomadic, giving it priority over TFE version
 	ck3 = nomad_government

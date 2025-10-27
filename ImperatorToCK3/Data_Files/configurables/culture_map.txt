@@ -918,9 +918,6 @@ link = { ck3=samhan ir=byeonhan } # Byeonhan was a historical Korean confederacy
 link = { ck3=ainu ir=jeulmeun } # Jeulmeun is a revivalist culture, and belongs to the same culture group as the Ainu in Terra Indomita.
 link = { ck3=chong ir=pear } # In RoA, the chong culture is localized as Samre, which is the same ethnic group as the Pear people.
 link = { ck3 = kinh ir = chu ir = duhu ir = huaxia ir = ji ir = jin ir = qilu ir = qin ir = xu ir = yaan ir = yan ir = zhongyuan ir = guzhu  ir = huaiyi  ir = laiyi  ir = lingzhi irRegion = hong_area irRegion = jiaozhi_area irRegion = jiuzhen_area } # In CK3, Kinh is represented as a hybrid of Lac Viet and Han. This is probably the best way to realistically represent this culture appearing naturally outside of listing every single possible chinese tag as a condition for lacviet to convert to kinh if its inside their realm
-link = { ck3=han ir=huaxia } # Huaxia was a historical term used to refer to the Chinese people. # https://en.wikipedia.org/wiki/Huaxia
-link = { ck3=sichuan ir=ba } # https://en.wikipedia.org/wiki/Ba_(state): "an ancient state in eastern Sichuan, China"
-link = { ck3=sichuan ir=bo } # https://en.wikipedia.org/wiki/Bo_people_(China): "The Bo people were native to southeastern Sichuan."
 link = { ck3=georgian ir=bekhyrian } # the region of Bekhyria (https://upload.wikimedia.org/wikipedia/commons/4/4d/Georgian_States_Colchis_and_Iberia_%28600-150BC%29-en.svg) is inhabited by the Colchians in TI, the Bekhyrian culture doesn't have any pops.
 link = { ck3=nubian ir=syrbotian } # https://en.wikipedia.org/wiki/Syrbotae
 link = { ck3=armenian ir=phasiane } # Armenia was also known as Greater Armenia, which included the region of Phasiane.
@@ -938,16 +935,22 @@ link = { ck3=malay ir=malayan } # The Malayan people are a group of ethnic Malay
 link = { ck3=idaya ir=igorot } # The Igorot people are a group of indigenous peoples who live in the mountainous regions of the Philippines.
 link = { ck3=palawan ir=tagbanwa } # The Tagbanwa people are an indigenous group who live in the Palawan Islands of the Philippines.
 link = { ck3=bactrian ir=bactra } # Bactria was a historical region in Central Asia that is now part of Afghanistan and Tajikistan. (In game has Bactrian as its name)
-link = { ck3=han ir=yan } # Yan was a historical state in China that existed during the Spring and Autumn period.  # TODO: try to map this manually
-link = { ck3=han ir=jin } # Jin was a historical state in China that existed during the Spring and Autumn and Warring States periods.  # TODO: try to map this manually
+
+link = { ck3=yan ir=yan } # Yan was a historical state in China that existed during the Spring and Autumn period.  # TODO: try to map this manually
+link = { ck3=jin ir=jin } # Jin was a historical state in China that existed during the Spring and Autumn and Warring States periods.  # TODO: try to map this manually
 link = { ck3=qin ir=qin }
 link = { ck3=han ir=chu } # Chu was a historical state in China that existed during the Spring and Autumn and Warring States periods.  # TODO: try to map this manually
 link = { ck3=han ir=zhongyuan } # Zhongyuan was a historical region in China that is now part of Henan Province.  # TODO: try to map this manually
-link = { ck3=han ir=qilu } # Qilu was a historical region in China that is now part of Shandong Province.  # TODO: try to map this manually
-link = { ck3=han ir=yaan } # Yaan was a historical region in China that is now part of Sichuan Province.  # TODO: try to map this manually
-link = { ck3=han ir=ji } # Ji was a historical state in China that existed during the Spring and Autumn and Warring States periods.  # TODO: try to map this manually
-link = { ck3=han ir=xu } # Xu was a historical state in China that existed during the Spring and Autumn and Warring States periods.  # TODO: try to map this manually
+link = { ck3=qilu ir=qilu } # Qilu was a historical region in China that is now part of Shandong Province.  # TODO: try to map this manually
+link = { ck3=qilu ir=yaan } # Yaan was a historical region in China that is now part of Sichuan Province.  # TODO: try to map this manually
+link = { ck3=jin ir=ji } # Ji was a historical state in China that existed during the Spring and Autumn and Warring States periods.  # TODO: try to map this manually
+link = { ck3=jianghuai ir=xu } # Xu was a historical state in China that existed during the Spring and Autumn and Warring States periods.  # TODO: try to map this manually
 link = { ck3=han ir=duhu } # Duhu was a historical region in China that is now part of Gansu Province.  # TODO: try to map this manually
+link = { ck3=han ir=huaxia } # Huaxia was a historical term used to refer to the Chinese people. # https://en.wikipedia.org/wiki/Huaxia
+link = { ck3=old_bashu ir=ba } # https://en.wikipedia.org/wiki/Ba_(state): "an ancient state in eastern Sichuan, China"
+link = { ck3=old_bashu ir=bo } # https://en.wikipedia.org/wiki/Bo_people_(China): "The Bo people were native to southeastern Sichuan."
+link = { ck3=old_bashu ir=shu } # Shu is an ancient state in the Sichuan region
+
 link = { ck3=shatuo ir=xiongnu_chinese } # The Sino-Xiongnu were a group of Xiongnu people who had assimilated into Chinese culture. (This seems similar to the Shatou culture in CK3, which is a hybrid of Ueban and Han, so will map to that for now ~~tanner918)
 link = { ck3=yao ir=yangyu } # Yangyu was a historical region in China that is now part of Guangdong Province.
 link = { ck3 = sheren ir = sanmiao irRegion = yang_region irRegion = jiao_region } # She seems to be closely related to Hmong/Miao
@@ -974,22 +977,24 @@ link = { ck3 = udege ir = haoshi irRegion = modong_region } # Probably not a 1:1
 link = { ck3 = jurchen ir = haoshi ir = huifa ir = sushen } # Jurchens expanded the most out of that region, so it will be the fallback
 link = { ck3=levantine ir=philistine } # The Philistines were an ancient people who lived in the southern Levant.
 link = { ck3 = tocharian ir = loulan } # Initially mapped to uyghur, but according to ChatGPT, the loulan wouldn't be considered ancestors since the uyghurs are of turkic origin
-link = { ck3=han ir=huaiyi } # Was in the Yi culture group in Terra-Indomita, not chinese culture group. But there is no Rajas of Asia culture to actually represent this and they likely got assimilated by the han
-link = { ck3=han ir=laiyi } # Was in the Yi culture group in Terra-Indomita, not chinese culture group. But there is no Rajas of Asia culture to actually represent this and they likely got assimilated by the han
-link = { ck3=han ir=guzhu } # Was in the Yi culture group in Terra-Indomita, not chinese culture group. But there is no Rajas of Asia culture to actually represent this and they likely got assimilated by the han
-link = { ck3=han ir=lingzhi } # Was in the Yi culture group in Terra-Indomita, not chinese culture group. But there is no Rajas of Asia culture to actually represent this and they likely got assimilated by the han
-link = { ck3 = wu ir = wuyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
-link = { ck3 = yue ir = ouyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
-link = { ck3 = min ir = minyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
-link = { ck3 = yue ir = yangyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
-link = { ck3 = min ir = fulou } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
-link = { ck3 = yue ir = nanyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
+
+link = { ck3=dongyi ir=huaiyi } # Was in the Yi culture group in Terra-Indomita, not chinese culture group. But there is no Rajas of Asia culture to actually represent this and they likely got assimilated by the han
+link = { ck3=dongyi ir=laiyi } # Was in the Yi culture group in Terra-Indomita, not chinese culture group. But there is no Rajas of Asia culture to actually represent this and they likely got assimilated by the han
+link = { ck3=dongyi ir=guzhu } # Was in the Yi culture group in Terra-Indomita, not chinese culture group. But there is no Rajas of Asia culture to actually represent this and they likely got assimilated by the han
+link = { ck3=dongyi ir=lingzhi } # Was in the Yi culture group in Terra-Indomita, not chinese culture group. But there is no Rajas of Asia culture to actually represent this and they likely got assimilated by the han
+
+link = { ck3 = bacviet ir = wuyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
+link = { ck3 = bacviet ir = ouyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
+link = { ck3 = bacviet ir = minyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
+link = { ck3 = bacviet ir = yangyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
+link = { ck3 = bacviet ir = fulou } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
+link = { ck3 = bacviet ir = nanyue } # Rajas of Asia has this culture diverge from Han in 1050, but it seems to represent the same regional/cultural differences that the Terra-Indomita culture represents
+
 link = { ck3=sami ir=sapmi } # Sapmi is the traditional homeland of the Sami people.
 link = { ck3=mogyer ir=gorokhov } # The Gorokhovs were a Hungarian tribe that lived in the Carpathian Mountains.
 link = { ck3 = solqumyt ir = itkul } # Not sure what sort of cultures would best map, I figured given its location and Uralic culture group, maybe Samoyedic cultures, might change if a better choice is determined
 link = { ck3 = kott ir = bolsherechye } # Not sure what sort of cultures would best map, I figured given its location and Uralic culture group, maybe Samoyedic cultures, might change if a better choice is determined
 link = { ck3=urslavic ir=slavian } # Both represent early Slavic cultures
-link = { ck3=sichuan ir=shu } # Shu is an ancient state in the Sichuan region
 link = { ck3=georgian ir=sasperires } # Sasperires were an ancient tribe in the region of modern Georgia
 link = { ck3=udmurt ir=argippaei } # Argippaei were described by Herodotus as living north of Scythia, possibly related to Sarmatians or Alans (But the converter already has quite a few cultures mapped to those, and doing research/asking chatgpt doesn't give a single answer as they may not have been an atual culture, just a mis-identified one. So for now, will map it to something different for more variety. ChatGPT recommneded cultures like Komi, but since another culture is mapped to that, for now I will just map it to Udmurt ~~tanner918)
 link = { ck3=samoyed ir=arimphaei } # Arimphaei were described as living in the far north, possibly related to Finno-Ugric peoples

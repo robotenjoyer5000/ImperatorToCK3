@@ -226,18 +226,23 @@ l_english:
  wostiyasite: "Wostiyasite"
  wostiyasite_collective_noun: "Wostiyamen"
  wostiyasite_prefix: "Wostiyasi"
+
  mikligardrish: "Mikligarðrish"
  mikligardrish_collective_noun: "Mikligarðmen"
  mikligardrish_prefix: "Mikligarðrish"
+
  breathanach: "Breathanach"
  breathanach_collective_noun: "Breathanach"
  breathanach_prefix: "Breathanach"
+
  brythenig: "Brythenig"
  brythenig_collective_noun: "Brythenigs"
  brythenig_prefix: "Brythenig"
+
  laessin: "Läßin"
  laessin_collective_noun: "Läßins"
  laessin_prefix: "Läßin"
+ 
  wenedyk: "Wenedyk"
  wenedyk_collective_noun: "Weneds"
  wenedyk_prefix: "Wenedo"
@@ -378,6 +383,34 @@ l_english:
  qin: "Qin"
  qin_collective_noun: "Qin"
  qin_prefix: "Qin"
+ 
+ yan: "Yan"
+ yan_collective_noun: "Yan"
+ yan_prefix: "Sino"
+
+ qilu: "Qilu"
+ qilu_collective_noun: "Qilu"
+ qilu_prefix: "Sino"
+ 
+ jin: "Jin"
+ jin_collective_noun: "Jin"
+ jin_prefix: "Sino"
+ 
+ jianghuai: "Jianghuai"
+ jianghuai_collective_noun: "Jianghuai"
+ jianghuai_prefix: "Sino"
+ 
+ old_bashu: "Bashu"
+ old_bashu_collective_noun: "Bashu"
+ old_bashu_prefix: "Bashu"
+ 
+ bacviet: "Bacviet"
+ bacviet_collective_noun: "Bacviet"
+ bacviet_prefix: "Bacviet"
+ 
+ dongyi: "Dongyi"
+ dongyi_collective_noun: "Dongyi"
+ dongyi_prefix: "Dongyi"
  
  neo_minoan: "Neo-Minoan"
  neo_minoan_collective_noun: "Neo-Minoans"
